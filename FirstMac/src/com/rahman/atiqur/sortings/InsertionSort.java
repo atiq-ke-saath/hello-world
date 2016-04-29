@@ -4,6 +4,10 @@ public class InsertionSort {
 	public static void main(String[] args) {
 		int[] a = {20,13,45,7,87,98,21,56,76,12,10,65,10,10,12,34};
 		
+		System.out.print ("Before Sorting: ");
+		for(int y : a)
+			System.out.print(y+" ");
+		System.out.println();
 		
 		for(int i=1;i<a.length;i++) {
 			int tmp = a[i];
@@ -14,6 +18,7 @@ public class InsertionSort {
 			a[j+1] = tmp;
 		}
 		
+		System.out.print("After Sorting: ");
 		for(int y : a) 
 			System.out.print (y+" ");
 	}
